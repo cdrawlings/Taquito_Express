@@ -1,0 +1,652 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Taqueria Taquito Express</title>
+
+
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="scss/style.scss" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/efb77441f1.js" crossorigin="anonymous"></script>
+
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Rokkitt:wght@400;600;900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+
+<!-- Hambuger navigation button -->
+<section class="wrapper">
+  <input type="checkbox" id="check">
+  <label for="check" class="open"><i class="fas fa-bars"></i></label>
+  <nav>
+    <label for="check" class="close"><i class="fas fa-times"></i></label>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="location.html">Around Atlanta</a></li>
+      <li><a href="vahi.html">Virginia Highland</a></li>
+    </ul>
+  </nav>
+</section>
+
+
+<header>
+  <div class="header-items">
+    <a href="index.html"><img alt="Taquria Taquito Express Logo" class="tte-logo" src="/img/tte_logo.svg"></a>
+  </div>
+</header>
+
+
+
+<!-- PHP FOR WP
+
+
+<?php
+/**
+ * Template Name: Virginia Highland Menu
+ * package TaguitoExpress
+ */
+
+
+$meat = get_field('meat');
+$specialty_meat = get_field('specialty_meat');
+$fish = get_field('fish');
+$vegetarian = get_field('vegetarian');
+
+$price_taco = get_field('price_taco');
+$price_specialty_taco = get_field('price_specialty_taco');
+$price_shrimp_taco = get_field('price_shrimp_taco');
+$price_carne_asada = get_field('price_carne_asada');
+$price_burrito = get_field('price_burrito');
+$price_specialty_burrito = get_field('price_specialty_burrito');
+$price_burrito_bowl = get_field('price_burrito_bowl');
+$price_specialty_burrito_bowl = get_field('price_specialty_burrito_bowl');
+$price_nacho = get_field('price_nacho');
+$price_specialty_nacho = get_field('price_specialty_nacho');
+$price_gordita = get_field('price_gordita');
+$price_quesadilla = get_field('price_quesadilla');
+$price_specialty_quesadilla = get_field('price_specialty_quesadilla');
+$price_torta = get_field('price_torta');
+$price_specialty_torta = get_field('price_specialty_torta');
+$price_torta_milamese_chicken = get_field('price_torta_milamese_chicken');
+$price_torta_milanese_beef = get_field('price_torta_milanese_beef');
+$price_torta_cubano = get_field('torta_cubano');
+
+$price_breakfast_taco = get_field('price_breakfast_taco');
+$price_breakfast_burrito = get_field('price_breakfast_burrito');
+
+$price_empanada_chicken = get_field('price_empanada_chicken');
+$price_empanada_beef = get_field('price_empanada_beef');
+$price_tamale_chicken = get_field('price_tamale_chicken');
+$price_tamale_pork = get_field('price_tamale_pork');
+
+$price_mixed_meat = get_field('price_mixed_meat');
+$price_add_meat = get_field('price_add_meat');
+$price_avacado = get_field('price_avacado');
+$price_side_of_cheese = get_field('price_side_of_cheese');
+$price_sour_cream = get_field('price_sour_cream');
+$price_nacho_jalapeno = get_field('price_nacho_jalapeno');
+
+$price_cheese_dip_chips = get_field('price_cheese_dip_chips');
+$price_salsa_chips = get_field('price_salsa_chips');
+$price_gaucamole = get_field('price_gaucamole');
+$price_beans = get_field('price_beans');
+$price_rice = get_field('price_rice');
+
+$price_mexican_coke = get_field('price_mexican_coke');
+$price_jarritos = get_field('price_jarritos');
+$price_horchata = get_field('price_horchata');
+
+get_header();
+?>
+
+
+<?php
+get_template_part('template-parts/content', 'subhead');
+?>
+
+
+-->
+
+<!-- Menu header -->
+<section class="page__header">
+  <div class="title-location">Virginia Highland Menu</div>
+</section>
+
+<article class="menu">
+
+
+  <!-- Menu page navigation -->
+  <div class="nav-locations"><a class="back-link" href="https://www.taquitoatl.com/location/">Locations</a></div>
+  <div class="nav-menu">
+    <button class="menu__button menu__button-active" data-for-menu="1">Mains</button>
+    <button class="menu__button" data-for-menu="2">Breakfast</button>
+    <button class="menu__button" data-for-menu="3">Specialities</button>
+    <button class="menu__button" data-for-menu="4">Add-Ons</button>
+    <button class="menu__button" data-for-menu="5">Sides</button>
+    <button class="menu__button" data-for-menu="6">Bottled Drinks</button>
+  </div>
+
+
+  <!-- MENU: Main dishes and protein selection -->
+  <section class="menu__items menu__items-active" data-menu="1">
+    <div class="base-fillings">
+      <div class="base-items">
+        <h3>Meat</h3>
+        <div class="protein">
+          <?php echo $meat; ?>
+        </div>
+      </div>
+
+      <div class="base-items">
+        <h3>Specialty Meat</h3>
+        <div class="protein">
+          <?php echo $specialty_meat; ?>
+        </div>
+      </div>
+
+      <div class="base-items">
+        <h3>Fish</h3>
+        <div class="protein">
+
+          <?php echo $fish ?>
+        </div>
+      </div>
+
+      <div class="base-items">
+        <h3>Vegetarian</h3>
+        <div class="protein">
+          Refried beans<br>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-main-selection">
+
+      <div class="menu__item">
+        <div class="menu-selection">
+          <h3 class="menu-food">Taco</h3>
+          <span class="menu-price"><?php echo $price_taco; ?></span>
+        </div>
+
+        <div class="menu-special">
+          <h3 class="menu-food">Smoked Beef Brisket Taco</h3>
+          <span class="menu-price"><?php echo $price_specialty_taco; ?></span>
+        </div>
+
+        <div class="menu-special">
+          <h3 class="menu-food">Shrimp Taco</h3>
+          <span class="menu-price"><?php echo $price_shrimp_taco; ?></span>
+        </div>
+
+        <div class="menu-elements">
+          Corn or Flour Tortilla<br>
+          Select Meat/Fish/Vegetarian<br>
+          Cilantro, Onions, Lime<br>
+          <span class="salsa">Choice of Red or Green Salsa</span>
+        </div>
+      </div>
+
+
+      <div class="menu__item">
+        <div class="menu-selection">
+          <h3 class="menu-food">Burrito</h3>
+          <div class="menu-price"><?php echo $price_burrito; ?></div>
+        </div>
+        <div class="menu-special">
+          <h3 class="menu-food">Specialty Burrito</h3>
+          <span class="menu-price"><?php echo $price_specialty_burrito; ?></span>
+        </div>
+        <div class="menu-elements">
+          12" Flour Tortilla<br>
+          Select Meat/Fish/Vegetarian<br>
+          Refried Beans, Rice, Cheese, Lettuce, Pico de Gallo, Chipotle Mayonnaise, Nacho Jalapeños<br>
+          <span class="salsa">Choice of Red or Green Salsa</span>
+        </div>
+      </div>
+
+
+      <div class="menu__item">
+        <div class="menu-selection">
+          <h3 class="menu-food">Quesadilla</h3>
+          <div class="menu-price"><?php echo $price_quesadilla; ?></div>
+        </div>
+        <div class="menu-special">
+          <h3 class="menu-food">Specialty Quesadilla</h3>
+          <span class="menu-price"><?php echo $price_specialty_quesadilla; ?></span>
+        </div>
+        <div class="menu-elements">
+          12" Flour Tortilla<br>
+          Select Meat/Vegetarian<br>
+          Cheese, Lettuce, Pico de Gallo, Nacho Jalapeños<br>
+          <span class="salsa">Choice of Red or Green Salsa</span>
+        </div>
+      </div>
+
+
+      <div class="menu__item">
+        <div class="menu-selection">
+          <h3 class="menu-food">Gordita</h3>
+          <div class="menu-price"><?php echo $price_gordita; ?></div>
+        </div>
+        <div class="menu-elements">
+          Pan de Maseca with Cheese<br>
+          Select Meat<br>
+          Sour Cream, Lettuce, Pico de Gallo<br>
+          <span class="salsa">Choice of Red or Green Salsa</span>
+        </div>
+      </div>
+
+
+      <div class="menu__item">
+        <div class="menu-selection">
+          <h3 class="menu-food">Nachos</h3>
+          <div class="menu-price"><?php echo $price_nacho; ?></div>
+        </div>
+        <div class="menu-special">
+          <h3 class="menu-food">Specialty Nachos</h3>
+          <span class="menu-price"><?php echo $price_specialty_nacho; ?></span>
+        </div>
+        <div class="menu-elements">
+          Fried Corn Tortilla Chips<br>
+          Select Meat<br>
+          Melted Cheese Dip, Refried Beans, Lettuce, Pico de Gallo, Nacho Jalapeños<br>
+          <span class="salsa">Choice of Red or Green Salsa</span>
+        </div>
+
+        <div class="menu-selection">
+          <h4>Vegetarian Nachos</h4>
+        </div>
+        <div class="menu-elements">
+          Melted Cheese Dip, Refried Beans, Lettuce, Pico de Gallo, Nacho Jalapeños<br>
+          <span class="salsa">Choice of Red or Green Salsa</span>
+        </div>
+      </div>
+
+      <div class="menu__item">
+
+        <div class="menu-selection">
+          <h3 class="menu-food">Torta</h3>
+          <div class="menu-price"><?php echo $price_torta; ?></div>
+        </div>
+        <div class="menu-special">
+          <h3 class="menu-food">Specialty Torta</h3>
+          <span class="menu-price"><?php echo $price_specialty_torta; ?></span>
+        </div>
+        <div class="menu-elements">
+          Pan de México<br>
+          Select Meat<br>
+          Cheese, Lettuce, Tomatoes, Avocado, Chipotle Mayonnaise, Side of Refried Beans<br>
+          <span class="salsa">Choice of Red or Green Salsa</span>
+        </div>
+
+        <div class="menu-selection">
+          <h4> Torta Specialities</h4>
+        </div>
+
+        <div class="special-item">
+          <div>Torta Milanesa - Breaded Chicken</div>
+          <div class="menu-price"><?php echo $price_torta_milamese_chicken; ?></div>
+        </div>
+        <div class="special-item">
+          <div>Torta Milanesa - Breaded Beef</div>
+          <div class="menu-price"><?php echo $price_torta_milanese_beef; ?></div>
+        </div>
+        <div class="special-item">
+          <div>Torta Cubana</div>
+          <div class="menu-price"><?php echo $price_torta_cubano; ?></div>
+        </div>
+
+        <div class="menu-selection">
+          <h4>Torta Cubana Add-Ons:</h4>
+        </div>
+
+        <div class="menu-elements">
+          Hot Dog<br>
+          Egg<br>
+          Chorizo<br>
+          Ham<br>
+        </div>
+
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <!-- MENU: Breakfast -->
+  <div class="menu-other-selection">
+    <section id="break" class="menu__items" data-menu="2">
+
+      <div class="menu__item">
+        <div class="breakfast">
+          Breakfast available till 11:00AM
+        </div>
+        <div class="menu-selection">
+
+          <h3 class="menu-food">Breakfast Taco</h3>
+          <div class="menu-price"><?php echo $price_breakfast_taco; ?></div>
+        </div>
+
+        <div class="menu-elements">
+          Corn or Flour Tortilla<br>
+          Egg with Chorizo<br>
+          Egg with Chorizo and Potato<br>
+          Egg with Ham<br>
+          Egg with Ham and Potato<br>
+          Egg with Refried Beans<br>
+          Choice of Red or Green Salsa<br>
+        </div>
+
+      </div>
+
+      <div class="menu__item">
+        <div class="menu-selection">
+          <h3 class="menu-food">Breakfast Burrito</h3>
+          <div class="menu-price"><?php echo $price_breakfast_burrito; ?></div>
+        </div>
+        <div class="menu-elements">
+          10" Flour Tortilla<br>
+          Egg with Chorizo<br>
+          Egg with Chorizo and Potato<br>
+          Egg with Ham<br>
+          Egg with Ham and Potato<br>
+          Egg with Refried Beans<br>
+          Choice of Red or Green Salsa<br>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Speciality Items -->
+    <section id="spec" class="menu__items" data-menu="3">
+      <div class="special__items">
+
+        <h3>Specialities</h3>
+        <div class="special-item">
+          <div>Empanada - Chicken</div>
+          <div class="menu-price"><?php echo $price_empanada_chicken; ?></div>
+        </div>
+
+        <div class="special-item">
+          <div>Empanada - Beef</div>
+          <div class="menu-price"><?php echo $price_empanada_beef; ?></div>
+        </div>
+
+        <div class="special-item">
+          <div>Tamale - Pork</div>
+          <div class="menu-price"><?php echo $price_tamale_pork; ?></div>
+        </div>
+
+        <div class="special-item">
+          <div>Tamale - Chicken</div>
+          <div class="menu-price"><?php echo $price_tamale_chicken; ?></div>
+        </div>
+
+        <div class="special-item">Choice of Red or Green Salsa</div>
+      </div>
+    </section>
+
+
+    <!-- MENU: Add-ons -->
+    <section id="side" class="menu__items" data-menu="4">
+      <div class="special__items">
+
+        <h3>Add-Ons</h3>
+
+        <div class="special-item">
+          <div>Mixed Meats - Combo of 2</div>
+          <div class="menu-price"><?php echo $price_mixed_meat; ?>
+          </div>
+        </div>
+
+        <div class="special-item">
+          <div>Add an Additional Meat</div>
+          <div class="menu-price"><?php echo $price_add_meat; ?></div>
+        </div>
+
+        <div class="special-item">
+          <div>Avocado</div>
+          <div class="menu-price"><?php echo $price_avacado; ?>
+          </div>
+        </div>
+
+
+        <div class="special-item">
+          <div>Nacho Jalapeños</div>
+          <div class="menu-price"><?php echo $price_nacho_jalapeno; ?></div>
+        </div>
+
+
+        <div class="special-item">
+          <div>Side of Cheese</div>
+          <div class="menu-price"><?php echo $price_side_of_cheese; ?></div>
+        </div>
+
+        <div class="special-item">
+          <div>Sour Cream</div>
+          <div class="menu-price"><?php echo $price_sour_cream; ?></div>
+        </div>
+
+        <div class="special-item">
+          <div>Chipotle Mayonnaise</div>
+        </div>
+
+
+        <div class="special-item">
+          <div>Lettuce</div>
+        </div>
+
+        <div class="special-item">
+          <div>Pico de Gallo</div>
+        </div>
+
+        <div class="special-item">
+          <div>Tomato</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- MENU: Sides -->
+    <section class="menu__items" data-menu="5">
+      <div class="special__items">
+        <h3>Sides</h3>
+
+        <div class="special-item">
+          <div>Cheese Dip with Tortilla Chips</div>
+          <div class="menu-price"><?php echo $price_cheese_dip_chips; ?></div>
+        </div>
+
+        <div class="special-item">
+          <div>Salsa with Tortilla Chips</div>
+          <div class="menu-price"><?php echo $price_salsa_chips; ?></div>
+        </div>
+
+        <div class="special-item">
+          <div>Guacamole with Tortilla Chips</div>
+          <div class="menu-price"><?php echo $price_gaucamole; ?></div>
+        </div>
+
+        <div class="special-item">
+          <div>Vegetarian Refried Beans</div>
+          <div class="menu-price"><?php echo $price_beans; ?></div>
+        </div>
+
+        <div class="special-item">
+          <div>Rice</div>
+          <div class="menu-price"><?php echo $price_rice; ?></div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- MENU: Bottled Drinls -->
+    <section id="drinks" class="menu__items" data-menu="6">
+      <div class="special__items">
+
+        <h3>Bottled Drinks</h3><br />
+        <div class="special-item">
+          <h3>Méxican Coca-Cola</h3>
+          <div class="menu-price"><?php echo $price_mexican_coke; ?></div>
+        </div>
+
+
+        <div class="bottled"> 500ML</div>
+
+        <div class="menu-selection">
+          <h3>Jarritos </h3>
+          <div class="menu-price"><?php echo $price_jarritos; ?></div>
+        </div>
+
+
+        <div class="special-item">
+          <div class="bottled"> 12.5 oz. Flavors:</div>
+        </div>
+
+        <div class="special-item">
+          <div>Pineapple</div>
+
+        </div>
+
+        <div class="special-item">
+          <div>Sidral</div>
+        </div>
+
+        <div class="special-item">
+          <div>Lime</div>
+
+        </div>
+
+        <div class="special-item">
+          <div>Grapefruit</div>
+
+        </div>
+
+        <div class="special-item">
+          <div>Mandarine</div>
+
+        </div>
+        <div class="special-item">
+          <div>Tamarindo</div>
+
+        </div>
+
+        <div class="special-item">
+          <div>Fruit Punch</div>
+        </div>
+
+        <div class="special-item">
+          <div>Mineragua</div>
+        </div>
+
+        <div class="special-item">
+          <div>Mango</div>
+        </div>
+
+        <div class="special-item">
+          <div>Sangria</div>
+        </div>
+
+
+
+        <!-- HORCHATA -->
+
+
+        <div class="menu-selection">
+          <h3>Waters Horchata</h3>
+          <div class="menu-price"><?php echo $price_horchata; ?></div>
+        </div>
+
+        <div class="special-item">
+          <div class="bottled"> 32 oz. Flavors:</div>
+        </div>
+
+        <div class="special-item">
+          <div>Jamaica</div>
+        </div>
+
+        <div class="special-item">
+          <div>Mango</div>
+        </div>
+
+        <div class="special-item">
+          <div>Tamarindo</div>
+        </div>
+
+
+      </div>
+    </section>
+
+  </div>
+
+</article>
+
+<!-- PHP FOR WP
+
+<?php echo do_shortcode('[sp_wpcarousel id="270"]'); ?>
+
+<?php
+get_template_part('template-parts/content', 'subfooter');
+?>
+
+<?php get_footer();
+
+END PHP FOR WORD
+-->
+
+<section class="soom">
+  Straight Outta México
+
+</section>
+
+<section class="carosul">
+  <img src="/img/torta-s.jpg"
+       srcset="/img/torta-s.jpg 750w,
+             ./img/torta-l.jpg 2000w"
+       sizes="(max-width: 600px) 750px,
+            2000px" alt="">
+</section>
+
+<footer>
+  <div class="copyright">&copy; 2021 Taquito Express</div>
+</footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollToPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+
+<script src="https://unpkg.com/smooth-scrollbar@latest/dist/smooth-scrollbar.js"></script>
+
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+  window.ga = function () {
+    ga.q.push(arguments)
+  };
+  ga.q = [];
+  ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('set', 'transport', 'beacon');
+  ga('send', 'pageview')
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+</body>
+
+</html>

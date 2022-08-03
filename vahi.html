@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Taqueria Taquito Express</title>
+
+
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="scss/style.scss" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/efb77441f1.js" crossorigin="anonymous"></script>
+
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Rokkitt:wght@400;600;900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+
+<!-- Hambuger navigation button -->
+<section class="wrapper">
+  <input type="checkbox" id="check">
+  <label for="check" class="open"><i class="fas fa-bars"></i></label>
+  <nav>
+    <label for="check" class="close"><i class="fas fa-times"></i></label>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="location.html">Around Atlanta</a></li>
+      <li><a href="vahi.html">Virginia Highland</a></li>
+    </ul>
+  </nav>
+</section>
+
+
+<header>
+  <div class="header-items">
+    <a href="index.html"><img alt="Taquria Taquito Express Logo" class="tte-logo" src="/img/tte_logo.svg"></a>
+  </div>
+</header>
+
+<!-- Location header -->
+<section class="page__header">
+  <div class="title-location">Virginia Highland</div>
+</section>
+
+<!-- Page navigation bar -->
+<article class="menu">
+
+  <!-- Location details -->
+  <section id="vahi" class="menu__items-active location__content">
+    <div class="call-ahead">Order online or call ahead for pick-up</div>
+    <div class="location">
+      <div class="l-location">
+        <h4 class="loc-city">Virginia Highland</h4>
+        <div class="inside">Inside Chevron</div>
+      </div>
+      <div class="r-location">
+        <div class="loc-address">
+          <p><a href="https://www.google.com/maps/place/1025+North+Highland+Avenue+Northeast,+Atlanta,+GA+30306">1025 N.
+            Highland Ave.<br>
+            Atlanta GA, 30306</a></p>
+        </div>
+
+        <div class="online-order">
+          <a class="o-btn" href="/chow.html"> >> Order Online</a>
+        </div>
+
+        <p class="ahead">Or call ahead and pick-up</p>
+        <div class="loc-phone-v">
+          <a href="tel:404 549-8190">404 549-8490</a>
+        </div>
+
+
+        <div class="loc-hours">
+
+          <div class="d-hours">
+            <div>Monday - Friday</div>
+            <div>7AM–6PM
+            </div>
+          </div>
+
+          <div class="d-hours">
+            <div>Saturday</div>
+            <div>7AM–4PM
+            </div>
+          </div>
+
+          <div class="d-hours">
+            <div>Sunday</div>
+            <div>Closed</div>
+          </div>
+        </div>
+
+        <div class="vh-menu">
+          <a class="btn" href="vahimenu.html"> >> Menu</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</article>
+
+
+
+<section class="soom">
+  Straight Outta México
+
+</section>
+
+<section class="carosul">
+  <img src="/img/torta-s.jpg"
+       srcset="/img/torta-s.jpg 750w,
+             ./img/torta-l.jpg 2000w"
+       sizes="(max-width: 600px) 750px,
+            2000px" alt="">
+</section>
+
+<footer>
+  <div class="copyright">&copy; 2021 Taquito Express</div>
+</footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollToPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+
+<script src="https://unpkg.com/smooth-scrollbar@latest/dist/smooth-scrollbar.js"></script>
+
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+  window.ga = function () {
+    ga.q.push(arguments)
+  };
+  ga.q = [];
+  ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('set', 'transport', 'beacon');
+  ga('send', 'pageview')
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+</body>
+
+</html>

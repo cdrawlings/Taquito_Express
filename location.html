@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex" />
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Taqueria Taquito Express</title>
+
+
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="scss/style.scss" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/efb77441f1.js" crossorigin="anonymous"></script>
+
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Rokkitt:wght@400;600;900&display=swap"
+        rel="stylesheet">
+
+
+
+
+
+</head>
+<body>
+
+<!-- Hambuger navigation button -->
+<section class="wrapper">
+  <input type="checkbox" id="check">
+  <label for="check" class="open"><i class="fas fa-bars"></i></label>
+  <nav>
+    <label for="check" class="close"><i class="fas fa-times"></i></label>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="location.html">Around Atlanta</a></li>
+      <li><a href="vahi.html">Virginia Highland</a></li>
+    </ul>
+  </nav>
+</section>
+
+
+<header>
+  <div class="header-items">
+    <a href="index.html">
+      <img alt="Taquria Taquito Express Logo" class="tte-logo" src="/img/tte_logo.svg"></a>
+  </div>
+</header>
+
+
+<!-- PHP for Word Press
+
+
+<?php
+/**
+ Template Name: Locations around Atlanta
+ */
+
+
+// Custom  Fields
+
+$chamblee_hours_weekday = get_field('chamblee_hours_weekday');
+$chamblee_hours_saturday = get_field('chamblee_hours_saturday');
+
+$dunwoody_hours_weekday = get_field('dunwoody_hours_weekday');
+$dunwoody_hours_saturday = get_field('dunwoody_hours_saturday');
+
+$johnscreek_hours_weekday = get_field('johnscreek_hours_weekday');
+$johnscreek_hours_saturday = get_field('johnscreek_hours_saturday');
+
+$marietta_hours_weekday = get_field('marietta_hours_weekday');
+$marietta_hours_saturday = get_field('marietta_hours_saturday');
+
+$mtvernon_hours_weekday = get_field('mtvernon_hours_weekday');
+$mtvernon_hours_saturday = get_field('mtvernon_hours_saturday');
+
+$kennesaw_hours_weekday = get_field('kennesaw_hours_weekday');
+$kennesaw_hours_saturday = get_field('kennesaw_hours_saturday');
+
+$windward_hours_weekday = get_field('windward_hours_weekday');
+$windward_hours_saturday = get_field('windward_hours_saturday');
+
+// Custom  Fields
+$vahi_hours_weekday = get_field('vahi_hours_weekday');
+$vahi_hours_saturday = get_field('vahi_hours_saturday');
+
+
+
+get_header();
+?>
+
+
+END PHP FOR WP
+-->
+
+
+<!-- Around Location header -->
+<?php
+get_template_part( 'template-parts/content', 'subhead' );
+?>
+
+
+<script src='https://cf.chownowcdn.com/latest/static/integrations/ordering-modal.min.js' data-chownow-company-id='29919'></script>
+
+
+
+<!-- Around Location header -->
+<section class="page__header">
+  <div class="title-location">Locations around Atlanta</div>
+</section>
+
+
+
+<!---  START CARRY OVER HERE FOR PAGE PAGE_LOCATION>PHP -->
+<!-- Location Navigation Bar -->
+<article class="locations">
+  <div class="nav-locations">
+    <a class="location__link" href="https://www.taquitoatl.com/locations-around-atlanta/#arnoldmill">  <button class="location__button">Arnold Mill</button></a>
+
+    <a class="location__link" href="https://www.taquitoatl.com/locations-around-atlanta/#chamblee">  <button class="location__button">Chamblee</button></a>
+    <a class="location__link" href="https://www.taquitoatl.com/locations-around-atlanta/#dunwoody"> <button class="location__button">Dunwoody
+    </button></a>
+    <a class="location__link" href="https://www.taquitoatl.com/locations-around-atlanta/#jcreek"> <button class="location__button">Johns Creek</button></a>
+    <a class="location__link" href="https://www.taquitoatl.com/locations-around-atlanta/#mvernon"> <button class="location__button">Mt. Vernon</button></a>
+    <a class="location__link" href="https://www.taquitoatl.com/locations-around-atlanta/#kennesaw"> <button class="location__button">Kennesaw</button></a>
+    <a class="location__link" href="https://www.taquitoatl.com/locations-around-atlanta/#vahi"> <button class="location__button">Virginia Highlands</button></a>
+    <a class="location__link" href="https://www.taquitoatl.com/locations-around-atlanta/#windward"> <button class="location__button">Windward</button></a>
+
+  </div>
+
+
+  <!-- LOCATION: Arnold mill -->
+  <section id="arnoldmill">
+
+    <div class="location">
+
+      <div class="l-location">
+        <div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.465447955247!2d-84.35736779999999!3d34.0832149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f573890e5c7895%3A0x31c25b025b13e0fd!2s12335%20Arnold%20Mill%20Rd%2C%20Alpharetta%2C%20GA%2030004!5e0!3m2!1sen!2sus!4v1659471587609!5m2!1sen!2sus"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <div class="r-location">
+        <h4 class="loc-city">Arnold Mill, Alpharetta</h4>
+        <div class="inside">Inside BP</div>
+
+        <div class="loc-address">
+          <p><a href="https://www.google.com/maps/place/5018+Peachtree+Industrial+Blvd,+Chamblee,+GA+30341" target="_blank">
+            12335 Arnold Mill Rd<br>
+            Alpharetta, GA 30004
+          </a></p>
+        </div>
+
+        <div class="loc-phone">
+          <a href="tel: 678 404-8506"> 678 404-8506</a>
+        </div>
+
+        <div class="loc-hours">
+
+          <div class="d-hours">
+            <div>Monday - Friday</div> <div><?php echo $chamblee_hours_weekday; ?></div>
+          </div>
+
+          <div class="d-hours">
+            <div>Saturday</div> <div><?php echo $chamblee_hours_saturday; ?></div>
+          </div>
+
+          <div class="d-hours">
+            <div>Sunday</div>
+            <div>Closed</div>
+          </div>
+        </div>
+
+        <div class="loc-buttons">
+          <a class="btn-loc" href="https://www.taquitoatl.com/amilllmenu/">Menu</a>
+          <a class="btn-loc chownow-order-online" href='https://ordering.chownow.com/order/29919/locations/XXXXXXXXXX' target='_blank'>
+            Order online</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- LOCATION: Chamblee -->
+  <section id="chamblee">
+
+    <div class="location">
+
+      <div class="l-location">
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.121672026711!2d-84.31771543534951!3d33.88652013065129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f508fe5ae46033%3A0xd7036f43e05a3e88!2s5018%20Peachtree%20Industrial%20Blvd%2C%20Chamblee%2C%20GA%2030341!5e0!3m2!1sen!2sus!4v1648837775066!5m2!1sen!2sus"
+            class="google_map" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <div class="r-location">
+        <h4 class="loc-city">Chamblee</h4>
+        <div class="inside">Inside BP</div>
+
+        <div class="loc-address">
+          <p><a href="https://www.google.com/maps/place/5018+Peachtree+Industrial+Blvd,+Chamblee,+GA+30341" target="_blank">
+            5018 Peachtree Ind. Blvd<br>
+            Chamblee, GA 30341</a></p>
+        </div>
+
+        <div class="loc-phone">
+          <a href="tel:770 455-6255">770 455-6255</a>
+        </div>
+
+        <div class="loc-hours">
+
+          <div class="d-hours">
+            <div>Monday - Friday</div> <div><?php echo $chamblee_hours_weekday; ?></div>
+          </div>
+
+          <div class="d-hours">
+            <div>Saturday</div> <div><?php echo $chamblee_hours_saturday; ?></div>
+          </div>
+
+          <div class="d-hours">
+            <div>Sunday</div>
+            <div>Closed</div>
+          </div>
+        </div>
+
+        <div class="loc-buttons">
+          <a class="btn-loc" href="https://www.taquitoatl.com/around-atlanta-menu/">Menu</a>
+          <a class="btn-loc chownow-order-online" href='https://ordering.chownow.com/order/29919/locations/50916' target='_blank'>
+            Order online</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LOCATION: Dunwoody -->
+  <section id="dunwoody" >
+
+
+    <div class="location">
+
+      <div class="l-location">
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.74443657252!2d-84.31581548478836!3d33.92197648064153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f509778a808421%3A0x4298ad9feed64dd!2s4485%20Chamblee%20Dunwoody%20Rd%2C%20Dunwoody%2C%20GA%2030338!5e0!3m2!1sen!2sus!4v1648838427804!5m2!1sen!2sus"
+            class="google_map" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <div class="r-location">
+        <h4 class="loc-city">Dunwoody</h4>
+        <div class="inside">Inside BP</div>
+
+        <div class="loc-address">
+          <p><a href="https://www.google.com/maps/place/4485+Chamblee+Dunwoody+Rd,+Dunwoody,+GA+30338" target="_blank">
+            4485 Chamblee Dunwoody Rd.<br>
+            Dunwoody, GA 30338</a></p>
+        </div>
+
+        <div class="loc-phone">
+          <a href="tel:470 514-3775">470 514-3775</a>
+        </div>
+
+        <div class="loc-hours">
+
+          <div class="d-hours">
+            <div>Monday - Friday</div>
+            <div><?php echo $dunwoody_hours_weekday; ?></div>
+          </div>
+
+          <div class="d-hours">
+            <div>Saturday</div>
+            <div><?php echo $dunwoody_hours_saturday; ?></div>
+          </div>
+
+          <div class="d-hours">
+            <div>Sunday</div>
+            <div>Closed</div>
+          </div>
+
+        </div>
+
+        <div class="loc-buttons">
+          <a class="btn-loc" href="https://www.taquitoatl.com/around-atlanta-menu/">Menu</a>
+          <a class="btn-loc chownow-order-online" href='https://ordering.chownow.com/order/29919/locations/50921' target='_blank'>
+            Order online</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION: Johns Creek -->
+  <section id="jcreek" >
+
+
+    <div class="location">
+
+      <div class="l-location">
+        <div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.7426085487355!2d-84.25540544978355!3d34.02481728051823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f59ff3f5ee80bd%3A0x3d444f68f074b916!2s3700%20Old%20Alabama%20Rd%2C%20Alpharetta%2C%20GA%2030022!5e0!3m2!1sen!2sus!4v1648839651536!5m2!1sen!2sus" class="google_map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <div class="r-location">
+        <h4 class="loc-city">Johns Creek</h4>
+        <div class="inside">Inside BP</div>
+
+        <div class="loc-address">
+          <p><a href="https://www.google.com/maps/place/5018+Peachtree+Industrial+Blvd,+Chamblee,+GA+30341" target="_blank">
+            3700 Old Alabama Rd.<br>
+            Johns Creek GA 30022</a></p>
+        </div>
+
+        <div class="loc-phone">
+          <a href="tel:770 455-6255">404 549-8490</a>
+        </div>
+
+        <div class="loc-hours">
+
+
+          <div class="d-hours">
+            <div>Monday - Friday</div>
+            <div><?php echo $johnscreek_hours_weekday; ?></div>
+          </div>
+
+          <div class="d-hours">
+            <div>Saturday</div>
+            <div><?php echo $johnscreek_hours_saturday; ?></div>
+          </div>
+
+          <div class="d-hours">
+            <div>Sunday</div>
+            <div>Closed</div>
+          </div>
+        </div>
+
+        <div class="loc-buttons">
+          <a class="btn-loc" href="https://www.taquitoatl.com/around-atlanta-menu/">Menu</a>
+          <a class="btn-loc chownow-order-online" href='https://ordering.chownow.com/order/29919/locations/50919' target='_blank'>
+            Order online</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION: Mount Vernon -->
+  <section id="mvernon" >
+
+
+    <div class="location">
+
+      <div class="l-location">
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.8241701688316!2d-84.33673468480009!3d33.945650180635155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f50be8733c0eb1%3A0x9d2e8959b143462!2s5418%20Chamblee%20Dunwoody%20Rd%2C%20Dunwoody%2C%20GA%2030338!5e0!3m2!1sen!2sus!4v1648826184503!5m2!1sen!2sus"
+            class="google_map" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+
+      </div>
+
+      <div class="r-location">
+        <h4 class="loc-city">Mt. Vernon</h4>
+        <div class="inside">Inside BP</div>
+
+        <p class="loc-address"><a
+          href='https://www.google.com/maps/place/5418+Chamblee+Dunwoody+Rd,+Dunwoody,+GA+30338/@33.9456502,-84.3367347,17z/data=!3m1!4b1!4m5!3m4!1s0x88f50be8733c0eb1:0x9d2e8959b143462!8m2!3d33.9456502!4d-84.334546'  target="_blank">
+          5418 Chamblee Dunwoody Rd.<br>
+          Dunwoody, GA 30338</a></p>
+
+        <div class="loc-phone">
+          <a href="tel:770 512-3336">770 512-3336</a>
+        </div>
+
+        <div class="loc-hours">
+
+          <div class="d-hours">
+            <div>Monday - Friday</div>
+            <div><?php echo $mtvernon_hours_weekday; ?>
+            </div>
+          </div>
+
+          <div class="d-hours">
+            <div>Saturday</div>
+            <div><?php echo $mtvernon_hours_saturday; ?>
+            </div>
+          </div>
+
+          <div class="d-hours">
+            <div>Sunday</div>
+            <div>Closed</div>
+          </div>
+        </div>
+
+        <div class="loc-buttons">
+          <a class="btn-loc" href="https://www.taquitoatl.com/around-atlanta-menu/">Menu</a>
+          <a class="btn-loc chownow-order-online" href='https://ordering.chownow.com/order/29919/locations/50915' target='_blank'>
+            Order online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- LOCATION: Kennesaw -->
+  <section id="kennesaw">
+
+    <div class="location">
+
+      <div class="l-location">
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.4265791978078!2d-84.57294228478617!3d34.007259680618105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5151915319ee5%3A0x1d39481195d915bf!2s575%20Ernest%20W%20Barrett%20Pkwy%20NW%2C%20Kennesaw%2C%20GA%2030144!5e0!3m2!1sen!2sus!4v1648838625420!5m2!1sen!2sus"
+            class="google_map" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <div class="r-location">
+        <h4 class="loc-city">Kennesaw</h4>
+        <div class="inside">Inside BP</div>
+
+        <div class="loc-address">
+          <p><a href="https://www.google.com/maps/place/575+Ernest+W+Barrett+Pkwy+NW,+Kennesaw,+GA+30144"
+                target="_blank">575 Ernest Barrett Pkwy. <br>
+            Kennesaw, GA 30144</a>
+          </p>
+        </div>
+
+        <div class="loc-phone">
+          <a href="tel:770 590-0402">770 590-0402</a>
+        </div>
+
+        <div class="loc-hours">
+
+          <div class="d-hours">
+            <div>Monday - Friday</div>
+            <div><?php echo $kennesaw_hours_weekday; ?>
+            </div>
+          </div>
+
+          <div class="d-hours">
+            <div>Saturday</div>
+            <div><?php echo $kennesaw_hours_saturday; ?>
+            </div>
+          </div>
+
+          <div class="d-hours">
+            <div>Sunday</div>
+            <div>Closed</div>
+          </div>
+
+        </div>
+
+        <div class="loc-buttons">
+          <a class="btn-loc" href="https://www.taquitoatl.com/around-atlanta-menu/">Menu</a>
+          <a class="btn-loc chownow-order-online" href='https://ordering.chownow.com/order/29919/locations/50917' target='_blank'>
+            Order online</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- LOCATION: vahi -->
+  <section id="vahi" >
+
+
+    <div class="location">
+
+      <div class="l-location">
+        <div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3316.129309747581!2d-84.35611144923895!3d33.78315878058516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5069e20e93a0b%3A0xe8ec64841f410652!2s1045%20North%20Highland%20Avenue%20Northeast%2C%20Atlanta%2C%20GA%2030306!5e0!3m2!1sen!2sus!4v1652211205410!5m2!1sen!2sus" class="google_map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <div class="r-location">
+        <h4 class="loc-city">Virginia Highland</h4>
+        <div class="inside">Inside BP</div>
+
+        <div class="loc-address">
+          <p><a href="https://www.google.com/maps/place/1045+North+Highland+Avenue+Northeast,+Atlanta,+GA+30306/@33.7831588,-84.3561114,17z/data=!3m1!4b1!4m5!3m4!1s0x88f5069e20e93a0b:0xe8ec64841f410652!8m2!3d33.7831588!4d-84.3539174" target="_blank">
+            1025 N. Highland Ave.<br>
+            Atlanta GA, 30306</a></p>
+        </div>
+
+        <div class="loc-phone">
+          <a href="tel:770 455-6255">404 549-8490</a>
+        </div>
+
+        <div class="loc-hours">
+
+          <div class="d-hours">
+            <div>Monday - Friday</div>
+            <div><?php echo $vahi_hours_weekday; ?>
+            </div>
+          </div>
+
+          <div class="d-hours">
+            <div>Saturday</div>
+            <div><?php echo $vahi_hours_saturday; ?>
+            </div>
+          </div>
+
+          <div class="d-hours">
+            <div>Sunday</div>
+            <div>Closed</div>
+          </div>
+        </div>
+
+        <div class="loc-buttons">
+          <a class="btn-loc" href="https://www.taquitoatl.com/virginia-highland-menu/">Menu</a>
+          <a class="btn-loc chownow-order-online" href='https://ordering.chownow.com/order/29919/locations/' target='_blank'>
+            Order online</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION: Windward -->
+  <section id="windward" >
+    <div class="location">
+
+      <div class="l-location">
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.0563455673823!2d-84.28098848478388!3d34.093696980594686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f575f196ef2ecf%3A0xd71585a1f2e529ef!2s5005%20Windward%20Pkwy%2C%20Alpharetta%2C%20GA%2030004!5e0!3m2!1sen!2sus!4v1648838670354!5m2!1sen!2sus"
+            class="google_map" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+
+      </div>
+
+      <div class="r-location">
+        <h4 class="loc-city">Windward</h4>
+        <div class="inside">Inside BP</div>
+
+        <div class="loc-address">
+          <p><a href="https://www.google.com/maps/place/5005+Windward+Pkwy,+Alpharetta,+GA+30004" target="_blank">5005
+            Windward Pkwy <br>
+            Alpharetta, GA 30004</a>
+          </p>
+        </div>
+
+
+        <div class="loc-phone">
+          <a href="tel:470 545-0037">470 545-0037</a>
+        </div>
+
+        <div class="loc-hours">
+
+          <div class="d-hours">
+            <div>Monday - Friday</div>
+            <div><?php echo $windward_hours_weekday; ?>
+            </div>
+          </div>
+
+          <div class="d-hours">
+            <div>Saturday</div>
+            <div><?php echo $windward_hours_saturday ?>
+            </div>
+          </div>
+
+          <div class="d-hours">
+            <div>Sunday</div>
+            <div>Closed</div>
+          </div>
+
+        </div>
+
+        <div class="loc-buttons">
+          <a class="btn-loc" href="https://www.taquitoatl.com/around-atlanta-menu/">Menu</a>
+          <a class="btn-loc chownow-order-online" href='https://ordering.chownow.com/order/29919/locations/50918' target='_blank'>
+            Order online</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</article>
+
+
+
+<section class="soom">
+  Straight Outta México
+</section>
+
+
+
+<section class="carosul">
+  <img src="/img/torta-s.jpg"
+       srcset="/img/torta-s.jpg 750w,
+             ./img/torta-l.jpg 2000w"
+       sizes="(max-width: 600px) 750px,
+            2000px" alt="">
+</section>
+
+
+
+<!--- PHP FOR WP
+
+
+
+<?php echo do_shortcode('[sp_wpcarousel id="270"]'); ?>
+
+<?php
+get_template_part( 'template-parts/content', 'subfooter' );
+?>
+
+<?php
+get_footer();
+?>
+
+
+
+END PHP FOR WP
+-->
+
+
+
+<footer>
+  <div class="copyright">&copy; 2021 Taquito Express</div>
+</footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollToPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+
+<script src="https://unpkg.com/smooth-scrollbar@latest/dist/smooth-scrollbar.js"></script>
+
+
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

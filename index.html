@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Taqueria Taquito Express</title>
+
+
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="scss/style.scss" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/efb77441f1.js" crossorigin="anonymous"></script>
+
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Rokkitt:wght@400;600;900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+
+<!-- Hambuger navigation button -->
+<section class="wrapper">
+  <input type="checkbox" id="check">
+  <label for="check" class="open"><i class="fas fa-bars"></i></label>
+  <nav>
+    <label for="check" class="close"><i class="fas fa-times"></i></label>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="location.html">Around Atlanta</a></li>
+      <li><a href="vahi.html">Virginia Highland</a></li>
+    </ul>
+  </nav>
+</section>
+
+<!-- Page loader  -->
+<div class="loader">
+  <div class="loader-content">
+    <img class="loader-logo" src="/img/tte_logo.svg" alt="">
+    <p class="loader-text">
+      A súper righteous taqueria
+    </p>
+    <img class="loader-anim" src="/img/load.svg" alt="Loading..."/>
+  </div>
+</div>
+
+<!-- Landing Page View -->
+<section class="landing__panel panel">
+
+  <!-- Header Included in the first section to be included with the image scrolling -->
+  <header>
+    <div class="header-items">
+      <img alt="Taquria Taquito Express Logo" class="tte-logo" src="/img/tte_logo.svg">
+    </div>
+  </header>
+
+
+  <!-- Landing Page  First window-->
+
+  <div class="panel-image">
+    <img class="hero-image" src="/img/hero-s.jpg"
+         srcset="/img/hero-s.jpg 750w,
+                 ./img/hero-l.jpg 2000w"
+         sizes="(max-width: 600px) 750px,
+                2000px"
+         alt="Hero Image Three Tacos on a plate"/>
+
+  </div>
+
+
+  <!-- Landing Page Content -->
+
+
+  <div class="tagline">
+    <p>Súper Righteous Tacos y Mucho Más</p>
+  </div>
+
+  <div class="hero-content">
+
+    <div class="vahi-lp">
+
+      <div class="chow-btn-lp">
+        <a class="chownow-order-online" href='https://ordering.chownow.com/order/29919/locations' target='_blank'>
+          Order online</a>
+      </div>
+
+      <div class="menu-btns"> Menus
+        <a class="btn-loc-lp" href="https://www.taquitoatl.com/around-atlanta-menu/">Around Atlanta</a>
+        <a class="btn-loc-lp" href="https://www.taquitoatl.com/virginia-highland-menu/">Virginia Highland</a>
+      </div>
+
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Locations</button>
+
+        <div id="myDropdown" class="dropdown-content">
+          <a href="https://www.taquitoatl.com/locations-around-atlanta/#chamblee"><p class="btn-location">Chamblee</p>
+          </a>
+          <a href="https://www.taquitoatl.com/locations-around-atlanta/#dunwoody"><p class="btn-location">Dunwoody</p>
+          </a>
+          <a href="https://www.taquitoatl.com/locations-around-atlanta/#jcreek"><p class="btn-location">Johns Creek</p>
+          </a>
+          <a href="https://www.taquitoatl.com/locations-around-atlanta/#kennesaw"><p class="btn-location">Kennesaw</p>
+          </a>
+          <a href="https://www.taquitoatl.com/locations-around-atlanta/#mvernon"><p class="btn-location">Mt. Vernon</p>
+          </a>
+          <a href="https://www.taquitoatl.com/locations-around-atlanta/#windward"><p class="btn-location">Windward</p>
+          </a>
+          <a href="https://www.taquitoatl.com/locations-around-atlanta/#vahi"><p class="btn-location">Virginia
+            Highland</p></a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+</section>
+
+<!-- Atlanta Magazine Quote Section -->
+<section class="lp__quote panel">
+
+  <div class="panel-image">
+    <img src="/img/six-tacos-s.jpg"
+         srcset="/img/six-tacos-s.jpg 750w,
+             ./img/six-tacos-l.jpg 2000w"
+         sizes="(max-width: 600px) 750px,
+            2000px"
+         alt="Six tacos on a plate">
+  </div>
+
+  <!-- Content -->
+  <div class="atlmag">
+    <a href="https://www.atlantamagazine.com/50-best-tacos-in-atlanta/">
+      <p class="sec-quote">"50 Best Tacos"</p>
+      <p class="source">Atlanta Magazine</p>
+    </a>
+  </div>
+</section>
+
+<!-- Eater Atlanta Quote Section -->
+<section class="lp__quote panel">
+  <div class="panel-image">
+    <img src="/img/nachos-s.jpg"
+         alt="Nachos on a plate">
+  </div>
+
+  <!-- Content -->
+  <a href="https://atlanta.eater.com/maps/best-gas-station-food-snacks-atlanta">
+    <div class="eater">
+      <p class="sec-quote">"The nachos are <br>the move"</p>
+      <p class="source">Eater Atlanta</p>
+    </div>
+  </a>
+</section>
+
+<!-- Menu -->
+<section class="lp__menu panel">
+  <div class="panel-image">
+    <img src="/img/burrito-s.jpg"
+         alt="Burrito on a plate">
+  </div>
+
+  <!-- Content -->
+  <div class="menu-lp">
+    <p class="sec-head">Menu</p>
+    <!-- VAHI Menu Link -->
+    <p class="sec-loc"><a href="vahi.html">Virginia Highland</a></p>
+    <!-- Other stores Link -->
+    <p class="sec-loc"><a href="menu.html">Around Atlanta</a></p>
+  </div>
+
+</section>
+
+<!-- Locations -->
+<section class="lp__location panel">
+  <div class="panel-image">
+    <img src="/img/gauc-s.jpg"
+         srcset="/img/gauc-s.jpg 750w,
+             ./img/gauc-l.jpg 2000w"
+         sizes="(max-width: 600px) 750px,
+            2000px" alt="Gaucamole on chips">
+  </div>
+
+  <!-- Content -->
+  <div class="loc-lp">
+
+    <p class="sec-head">Locations</p>
+    <!-- VAHI location Link -->
+    <a href="https://www.taquitoatl.com/locations-around-atlanta/#amill">
+      <div class="list-location">Arnold Mill</div>
+    </a>
+    <a href="https://www.taquitoatl.com/locations-around-atlanta/#chamblee">
+      <div class="list-location">Chamblee</div>
+    </a>
+    <a href="https://www.taquitoatl.com/locations-around-atlanta/#dunwoody">
+      <div class="list-location">Dunwoody</div>
+    </a>
+    <a href="https://www.taquitoatl.com/locations-around-atlanta/#jcreek">
+      <div class="list-location">Johns Creek</div>
+    </a>
+    <a href="https://www.taquitoatl.com/locations-around-atlanta/#mvernon">
+      <div class="list-location">Mt. Vernon</div>
+    </a>
+    <a href="https://www.taquitoatl.com/locations-around-atlanta/#kennesaw">
+      <div class="list-location">Kennesaw</div>
+    </a>
+    <a href="https://www.taquitoatl.com/locations-around-atlanta/#vahi">
+      <div class="list-location">Virginia Highland</div>
+    </a>
+    <a href="https://www.taquitoatl.com/locations-around-atlanta/#windward">
+      <div class="list-location">Windward</div>
+    </a>
+
+
+  </div>
+  <div class="copyright_lp">&copy; 2022 Taquito Express</div>
+</section>
+
+
+<script>
+  window.addEventListener("load", function () {
+    const loader = document.querySelector(".loader");
+    loader.className += " hidden"; // class "loader hidden"
+  });
+</script>
+
+<script>
+  /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  // Close the dropdown menu if the user clicks outside of it
+  window.onclick = function (event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+</script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollToPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+
+<script src="https://unpkg.com/smooth-scrollbar@latest/dist/smooth-scrollbar.js"></script>
+
+
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+
+</body>
+</html>
